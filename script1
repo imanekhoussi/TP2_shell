@@ -1,0 +1,10 @@
+gcc p1.c -o p1
+if [ $? -eq 0 ]
+  then
+    read -p "Executer le programme ? (O/N) " choix
+     if [ "$choix" == o ]
+        then ./p1
+     fi
+else
+   echo "errer de compilation "
+fi

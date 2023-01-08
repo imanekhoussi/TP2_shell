@@ -1,0 +1,12 @@
+read -p "Entrer le mois (1-12): " mois
+while [ $mois -lt 1 ] || [ $mois -gt 12 ]
+   do
+    read -p "Entrer une mois valide" mois
+   done
+read -p "Entrer lannee (1-2038): " annee
+while [ $annee -lt 1 ] || [ $annee -gt 2038 ]
+   do
+    read -p "Entrer une annee valide" annee
+   done
+cal $mois $annee
+ 
